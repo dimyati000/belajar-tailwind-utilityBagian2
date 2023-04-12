@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootcamp TailwindCSS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,300;1,600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        // extend untuk menambah aturan baru tanpa merubah yang ada
+        extend: {
+          // custom jarak
+          spacing: {
+              13: '3.25rem'
+          },
+          // custom jenis font
+          fontFamily: {
+            popins: ['Poppins'],
+          },
+          // custom warna
+          colors: {
+            gold: '#F7C93E',
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    /* * {
+      border: 0.3px solid red;
+    } */
+  </style>
+</head> 
+<body>
+  <section class="mb-2 font-popins max-w-3xl mx-auto">
+    <h2 class="mb-2 text-4xl mx-auto font-semibold">Mengenal Typography TailwindCSS</h2>
+    <div class="mb-4 text-lg text-gray-500">By <a href="#" class="text-gray-700 font-semibold"></a> Admin. 12 April 2023</div>
+    <p class="mb-4">Lorem ipsum dolor sit, amet <a href="#" class="underline font-semibold text-blue-600">consectetur</a> adipisicing elit. Magnam illum vitae a. Pariatur labore, ratione repellat excepturi laudantium placeat sequi voluptatum dolorem veritatis quisquam assumenda illo voluptate? Ipsum, vitae perspiciatis!</p>
+    <p class="mb-4 italic font-thin">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut incidunt voluptate architecto dolores deleniti adipisci quibusdam voluptas, illum quam rem?"</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga fugit dolore quo nulla sequi tempora alias animi velit laboriosam dolorum!</p>
+  </section>
+    <!-- bg-[#ffb] dan mt-[42px] adalah contoh arbitrary value -->
+    <!-- bg-scroll itu hanya tulisan yang bergerak, bg-local itu tulisannya nempel pada background,bg-fixed itu tulisan bisa discrol, tapi tulisan diem ketika scroll luar, background gerak seperti paralax -->
+  <div class="max-w-xl h-96 bg-[#ffb] mx-auto mt-[42px] overflow-y-scroll bg-fixed text-white color rounded-xl shadow-xl hadow-slate-300" style="background-image: url('https://source.unsplash.com/1000x600?green')">
+  <p class="p-5 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus a exercitationem adipisci cum, quo incidunt cupiditate, ullam nam, obcaecati quae quis beatae labore animi? Dignissimos incidunt provident, dicta reprehenderit, iure consequatur quasi ut at repellat libero deleniti aspernatur laboriosam perspiciatis culpa. Numquam perferendis quaerat, ducimus cum accusamus dolores. Quibusdam dolore fugiat quo nemo soluta, alias laudantium commodi eveniet facilis iste, cumque sint accusantium, consectetur nisi! Possimus necessitatibus vero omnis! Similique explicabo, voluptates ducimus architecto aliquid doloremque debitis temporibus. Odit necessitatibus cum placeat officia nisi! Quam tempora eos fugiat omnis quibusdam nihil repellat, assumenda id porro quae odit accusamus tempore ut architecto ratione vitae? Magnam iste dolores dolor cum commodi molestias quis. Ullam modi vitae assumenda optio? Consequuntur tempora non nam illo quod fugit, magnam facilis quis, aliquam voluptas beatae? Officia quasi iste iure, sapiente error est nulla? Est, nisi fuga. Odit sequi cum nihil, voluptatem ipsa dolore magnam? Sequi adipisci quod, inventore tempore dolores at et aliquid pariatur quasi atque fugit maxime aperiam exercitationem fuga rem explicabo accusamus. Dolor velit officia beatae, fuga tempore quae voluptas accusamus iste quas. Atque velit, repudiandae neque consequuntur iusto fugiat et voluptatem amet impedit nostrum doloribus ex enim deserunt tenetur maxime hic ipsam voluptate nisi quo modi ut nihil fuga repellendus provident. Aspernatur velit sapiente eum, nostrum quisquam inventore quas voluptatem temporibus tempore quos laboriosam placeat recusandae blanditiis similique maxime iusto. Accusantium nam nobis maiores, odio modi labore delectus nesciunt. Nemo quae aut consequatur, est, temporibus, tempore suscipit praesentium illum unde sit sed. Itaque nulla maiores porro iste aliquid asperiores laboriosam et dignissimos magnam omnis, provident ipsa nemo quisquam optio amet consequuntur iure iusto repellendus aspernatur temporibus! Temporibus obcaecati pariatur illo? Aperiam soluta blanditiis, porro omnis officiis doloribus excepturi quod a quam quidem quos eius, molestiae dignissimos exercitationem quia, asperiores hic accusantium repudiandae! Id nisi nesciunt vero assumenda repellat ducimus tempore cum, exercitationem consequuntur veniam quasi dolorem excepturi corrupti eius libero explicabo esse maiores amet labore minus. Modi repudiandae assumenda eaque commodi repellendus deserunt iste. Vel nulla laborum doloribus quisquam nam, modi ex provident totam voluptas repellat hic non perferendis fugiat laboriosam dolores. Quidem repellendus iste tenetur doloribus eum molestiae, suscipit sint, perspiciatis impedit dicta cumque natus dolorem obcaecati, harum deleniti aut accusantium? Dolorum cum hic praesentium animi atque tempora sit sapiente voluptatem tenetur. Deserunt velit reprehenderit aperiam eveniet quos obcaecati, laboriosam minus optio! Non debitis perferendis doloribus fuga laboriosam aliquid tempora illum officiis perspiciatis ut odit at voluptatem quisquam, quas voluptas dolorum distinctio delectus magni veniam assumenda provident minus facilis, nihil aliquam. Repellendus culpa dolore sunt voluptatem porro minima ratione dignissimos maxime, soluta, consectetur debitis laborum reprehenderit maiores beatae facilis ut neque qui molestias odio optio veniam impedit rem? Doloremque atque necessitatibus aspernatur neque quibusdam incidunt iusto sint officiis quod consectetur. Eligendi totam ab cumque reiciendis labore tempora pariatur nesciunt in illo, amet itaque similique voluptate inventore dicta obcaecati fuga quibusdam saepe harum ex earum accusamus quo facilis dolorum nihil. Quasi dignissimos accusantium hic error impedit voluptas corporis dolore, ducimus accusamus quam!</p>
+  </div>
+
+  <div class="mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg-cover rounded-2xl shadow-xl shadow-slate-300  overflow-hidden border-8 flex" style="background-image: url(./gambar.jpg)">
+    <!-- <div class="w-full h-full bg-blue-300 mix-blend-darken"></div> -->
+    <div class="w-[200px] h-[200px] bg-white/30 backdrop-blur-sm m-auto rounded-lg"></div>
+  </div>
+
+  <div class="mb-96"></div>
+
+</body>
+</html> 
